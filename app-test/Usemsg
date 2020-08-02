@@ -1,0 +1,15 @@
+I2C tool utility
+
+Syntax:
+  # i2c-tool -d [device name] -a [i2c dev address] -r/-w [reg address:hex] -c [write data:hex] -h
+
+Options:
+  device name: device node path. Ex: /dev/i2c2
+  speed      : I2C bus speed 
+  h          : help message
+    
+Launch examples:
+# i2c-tool -d /dev/i2c2 -a 0x2c -r 0x0c
+# i2c-tool -d /dev/i2c2 -a 0x2c -w 0x0c -c 0x80
+# i2c-tool -h
+

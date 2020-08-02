@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<module name="gpio-master">
+  <classification>Driver</classification>
+  <description>
+    <short>RCAR GPIO Driver</short>
+    <abstract><![CDATA[
+				GPIO Master driver for RcarE3 
+			]]></abstract>
+  </description>
+  <supports>
+    <availability>
+      <cpu isa="arm">
+        <byteOrder>le</byteOrder>
+      </cpu>
+    </availability>
+  </supports>
+  <contents>
+    <component id="RCAR_GPIO" generated="true">
+      <location basedir="arm/le">gpio-master</location>
+    </component>
+  </contents>
+  <requires>
+    <part build="false" location="lib/gpio"/>
+  </requires>
+</module>
